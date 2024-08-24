@@ -71,7 +71,7 @@
             background-color: rgba(0, 0, 0, 0.386);     
         }
         .input:hover{
-            width: 600px;
+            width: 550px;
             border: 2px solid gray;
             transition: 0.3s;
         }
@@ -80,7 +80,6 @@
         }
         .secound-menu{
             display: flex;
-            
             justify-content: space-between;
             text-align: center;
            
@@ -94,7 +93,7 @@
                 text-align: center;
              }
              .third-navbar-icon{
-               background-color: 
+              margin-top: 10px;
                 
              }
             .third-navbar-link{
@@ -157,12 +156,34 @@
                 
             }
             .feature-title{
+                padding: 10px;
                 font-size: 18px;
                 font-weight: normal;
             }
        /*media query*/
 
-       
+       @media screen and (max-width:500px){
+        .navbar a{
+            font-size:18px ;
+        }
+        .input{
+            width: 300px;
+            padding: 0px 20px;
+            margin-bottom: 25px;
+        }
+        .icon{
+            display: none;
+        }
+        .small-menu{
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+        .title{
+            margin-bottom: 10px;
+        }
+        
+        
+       }
         </style>
 </head>
 <body>
@@ -209,7 +230,7 @@
            
             <div class="small-menu">
             <img src="./img/user-profile.png" width="40px"/>
-            <P>Theather</P>
+            <P>sign in</P>
             </div>
             
         </div>

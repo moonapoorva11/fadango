@@ -4,9 +4,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fadango</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(25, 24, 24);
+            color: white;
+        }
+        .navbar{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        background-color: rgba(5, 5, 82, 0.837);
+        
+        
+        }
+        .navbar a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+            
+        }
+        .secound-navbar h1{
+            color: rgba(22, 22, 152, 0.837);
+            font-weight: bold;
+            padding: 10px;
+            font-size: 40px;
+            margin-left: 10px;
+
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color:rgba(22, 22, 152, 0.837);
+            border-radius: 50%;
+            font-weight: normal;
+        }
+       
+        .secound-navbar{
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            
+        }
+        .input{
+            color: grey;
+            padding: 10px;
+            height: 40px;
+            width: 500px;
+            margin-top: 15px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.386);     
+        }
+        .input:hover{
+            width: 600px;
+            border: 2px solid gray;
+            transition: 0.3s;
+        }
+        .secound-menu img{
+            background-color: white;
+        }
+        .secound-menu{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+           
+            }
+        .small-menu{
+            padding: 5px 15px;
+            border-radius: 20px;
+            }
+            /*third navbar*/
+            .third-navbar{
+                text-align: center;
+             }
+             .third-navbar-icon{
+               background-color: 
+                
+             }
+            .third-navbar-link{
+                font-size: 20px;
+                padding: 10px;
+            }
+            .third-menu-para{
+                font-size: 18px;
+                padding: 5px;
+                margin-top: 5px;
+            }
+            /* heading section*/
+            
+            .header-heading{
+               padding: 0px 20px;
+               margin-top: 50px;
+                
+            }
+            .header-para{
+                padding: 0px 20px;
+                margin-bottom: 30px;
+                font-weight: bold;
+                color:rgb(55, 55, 235) ;
+            }
+            .header-img{
+                border-radius: 10px;
+                width: 150px;
+            }
+            .title{
+                margin-top: 7px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .img-cantainer{
+                width: 100%;
+                
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .feature-cantainer{
+                width: 100%;
+                
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            .feature-box{
+                margin-top: 10px;
+                width: 500px;
+                
+            }
+            .feature-img{
+                
+            width: 450px;
+             border-radius: 40px;
+                
+            }
+            .feature-title{
+                font-size: 18px;
+                font-weight: normal;
+            }
+       
+        </style>
 </head>
 <body>
-    <h1>movie ticket booking system</h1>
+<nav>
+    <div class="navbar">
+        <a href="#">Gift Cards</a>
+        <a href="#">Offers</a>
+        <a href="#">p watch peacock</a>
+    </div>
+   
+    <div class="secound-navbar">
+       <div>
+        <h1><img src="./img/letter-f.png" width="40px">&nbsp;&nbsp;FANDANGO</h1>
+        </div>
+
+    <input type="text" placeholder="Search by city , state ,zip or movie" class="input"/>
+      
+    
+     <div class="icon">
+         <i class="fa fa-search"></i>
+         </div>
+        
+         <div class="secound-menu">
+          
+            <div class="small-menu">
+            <img src="./img/video.png" width="40px"/>
+            <p>movie</p>
+            </div>
+            
+            <div class="small-menu">
+            <img src="./img/cinema.png" width="40px"/>
+            <P>Theather</P>
+            </div>
+            
+            <div class="small-menu">
+            <img src="./img/watching.png" width="40px"/>
+            <P>Theather</P>
+            </div>
+            
+            <div class="small-menu">
+            <img src="./img/star.png" width="40px"/>
+            <P>Theather</P>
+            </div>
+           
+            <div class="small-menu">
+            <img src="./img/user-profile.png" width="40px"/>
+            <P>Theather</P>
+            </div>
+            
+        </div>
+       
+    </div>
+    <hr/>
+    <div class="third-navbar">
+       
+        <img src="./img/rt-icon.svg" width="50px" class="third-navbar-icon"/>
+        <div>
+       <a href="#" class="third-navbar-link">New Audience Score Badge Unveiled:Verified Hot</a>
+       <p class="third-menu-para">Check out the first Verified Hot Movies</p>
+       </div>
+       <hr/>
+
+    </div>
+    
+</nav>
+<header>
+    <h2 class="header-heading">MOVIES IN THEATHER</h2>
+    <P class="header-para">SEE ALL MOVIES</P>
+    <div class="img-cantainer">
+    <div>
+        <img src="./img/the-crow-194_The Crow_KA_R20_rgb.jpg" class="header-img">
+        <p class="title">The crow(2024)</p>
+    </div>
+    <div>
+        <img src="./img/BlinkTwice_Poster_Press_2765x4096.jpg" class="header-img">
+        <p class="title">Blink Twice (2024)</p>
+    </div>
+    <div>
+        <img src="./img/ALIEN_ROM_1SHT_DIGITAL_sRGB_Facehugger_V10.jpg" class="header-img">
+        <p class="title">Alien:Romulus<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/IEWU_Digi_1080x1920_01.jpg" class="header-img">
+        <p class="title">It Ends with us<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/coraline-TicketingThumbnail_1000x1480_jpg.jpg" class="header-img">
+        <p class="title">Coraline 15th<br/> Anniversary(2024)</p>
+    </div>
+    <div>
+        <img src="./img/DeapoolAndWolverine_2024.jpg" class="header-img">
+        <p class="title">Deadpool & Wolverine<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/TheForge_Online_1400x2100.jpg" class="header-img">
+        <p class="title">The froge(2024)</p>
+    </div>
+    <div>
+        <img src="./img/StrangeDarling-1600.jpg" class="header-img">
+        <p class="title">Stranger Darling(2024)</p>
+    </div>
+    </div>
+
+    <h2 class="header-heading">MOVIES IN THEATHER</h2>
+    <div class="img-cantainer">
+    <div>
+        <img src="./img/FND_poster_BeetlejuiceBeetlejuice-Presale.jpg" class="header-img">
+        <p class="title">Beetlejuice<br/>beetlejuice(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_1992-Presale.jpg" class="header-img">
+        <p class="title">1992(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_JunkKookIAmStill-Presale.jpg" class="header-img">
+        <p class="title">JUNK KOOK<br/>I AM STILL(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_Afraid-Presale.jpg" class="header-img">
+        <p class="title">AfrAID(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_Slingshot-Presale.jpg" class="header-img">
+        <p class="title">Slingshot(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_CityOfDreams-Presale.jpg" class="header-img">
+        <p class="title">City of Dream<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/FND_poster_UsherRendezvousInParis-Presale_Final.jpg" class="header-img">
+        <p class="title">USHER:RENEZ</p>
+    </div>
+    <div>
+        <img src="./img/SNE_Tsr1Sheet5_Comp93_RGB_2.jpg" class="header-img">
+        <p class="title">Speak No Evil</p>
+    </div>
+    </div>
+
+    <h2 class="header-heading">WATCH AT HOME</h2>
+    <P class="header-para">SEE ALL MOVIES</P>
+    <div class="img-cantainer">
+    <div>
+        <img src="./img/the-crow-194_The Crow_KA_R20_rgb.jpg" class="header-img">
+        <p class="title">The crow(2024)</p>
+    </div>
+    <div>
+        <img src="./img/BlinkTwice_Poster_Press_2765x4096.jpg" class="header-img">
+        <p class="title">Blink Twice (2024)</p>
+    </div>
+    <div>
+        <img src="./img/ALIEN_ROM_1SHT_DIGITAL_sRGB_Facehugger_V10.jpg" class="header-img">
+        <p class="title">Alien:Romulus<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/IEWU_Digi_1080x1920_01.jpg" class="header-img">
+        <p class="title">It Ends with us<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/coraline-TicketingThumbnail_1000x1480_jpg.jpg" class="header-img">
+        <p class="title">Coraline 15th<br/> Anniversary(2024)</p>
+    </div>
+    <div>
+        <img src="./img/DeapoolAndWolverine_2024.jpg" class="header-img">
+        <p class="title">Deadpool & Wolverine<br/>(2024)</p>
+    </div>
+    <div>
+        <img src="./img/TheForge_Online_1400x2100.jpg" class="header-img">
+        <p class="title">The froge(2024)</p>
+    </div>
+    <div>
+        <img src="./img/StrangeDarling-1600.jpg" class="header-img">
+        <p class="title">Stranger Darling(2024)</p>
+    </div>
+    </div>
+
+    <h2 class="header-heading">FEATURE</h2>
+    
+    <div class="feature-cantainer">
+    <div class="feature-box">
+        <img src="./img/Carousel_BlinkTwice_Exclusive.jpg" class="feature-img">
+        <p class="feature-title">Naomi ackie and channing tatum star in a mind-bending thriller-in theather now!</p>
+    </div>
+    <div class="feature-box">
+        <img src="./img/Carousel_TheCrow_BigTicket.jpg" class="feature-img">
+        <p class="feature-title">Finding a character,living forever and so much more</p>
+    </div>
+    <div class="feature-box">
+        <img src="./img/Carousel_Alien_Interview.jpg" class="feature-img">
+        <p class="feature-title">Get your 'Romulus' tickets and watch an <br/>exclusive conversation between the directirs of the original</p>
+    </div>
+   
+    
+    </div>
+
+
+
+
+
+
+    </header>
+   
     
 </body>
 </html>
